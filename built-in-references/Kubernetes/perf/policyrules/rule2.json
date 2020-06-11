@@ -10,8 +10,8 @@
       "then": {
         "effect": "[parameters('effect')]",
         "details": {
-          "constraintTemplate": "https://raw.githubusercontent.com/sw47/azure-policy/master/built-in-references/Kubernetes/perf/constrainttemplates/ct1.yaml",
-          "constraint": "https://raw.githubusercontent.com/sw47/azure-policy/master/built-in-references/Kubernetes/perf/constraints/constraint1.yaml",
+          "constraintTemplate": "https://raw.githubusercontent.com/sw47/azure-policy/master/built-in-references/Kubernetes/perf/constrainttemplates/ct2.yaml",
+          "constraint": "https://raw.githubusercontent.com/sw47/azure-policy/master/built-in-references/Kubernetes/perf/constraints/constraint2.yaml",
           "values": {
             "allowedContainerImagesRegex": "[parameters('allowedContainerImagesRegex')]",
             "excludedNamespaces": "[parameters('excludedNamespaces')]"
