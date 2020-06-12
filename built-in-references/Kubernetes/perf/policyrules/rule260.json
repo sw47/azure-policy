@@ -1,0 +1,21 @@
+{
+      "if": {
+        "field": "type",
+        "in": [
+          "AKS Engine",
+          "Microsoft.Kubernetes/connectedClusters",
+          "Microsoft.ContainerService/managedClusters"
+        ]
+      },
+      "then": {
+        "effect": "[parameters('effect')]",
+        "details": {
+          "constraintTemplate": "https://raw.githubusercontent.com/sw47/azure-policy/master/built-in-references/Kubernetes/perf/constrainttemplates/ct260.yaml",
+          "constraint": "https://raw.githubusercontent.com/sw47/azure-policy/master/built-in-references/Kubernetes/perf/constraints/constraint260.yaml",
+          "values": {
+            "allowedContainerImagesRegex": "[parameters('allowedContainerImagesRegex')]",
+            "excludedNamespaces": "[parameters('excludedNamespaces')]"
+          }
+        }
+      }
+}
